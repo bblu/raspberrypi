@@ -4,15 +4,23 @@
 import RPi.GPIO
 import time
 
+#1  a  f  2  3  b #
+#-----------------#
+#12 11 10 9  8  7 #
+#1  2  3  4  5  6 #
+#-----------------#
+#e  d  dp c  g  4 #
+
+
 # 定义单个数码管各段led对应的GPIO口
-LED_A = 26
-LED_B = 19
-LED_C = 13
-LED_D = 6
-LED_E = 5
-LED_F = 11
-LED_G = 9
-LED_DP = 10
+LED_A = 26 #p26
+LED_B = 19 #p19
+LED_C = 13 #p13 
+LED_D = 6  #p06
+LED_E = 5  #p05
+LED_F = 11 #p11
+LED_G = 9  #p09
+LED_DP = 10#p10
 
 # 定义1到4号数码管阳极对应的GPIO口
 DIGIT1 = 12
