@@ -31,8 +31,13 @@ def outputNum(num):
     gpio.output(OUT_3,RV[num][3])
     #print num, RV[num]
 while True:
+    
     for i in range(16):
         outputNum(i)
-        time.sleep(0.03)
+        if i%2==0:
+            time.sleep(0.25)
+        else:
+            time.sleep(0.1)
+            
 
     
